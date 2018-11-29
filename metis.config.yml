@@ -1,0 +1,15 @@
+project_token: d96473e6ba0bb61f82cf397c
+name: TuriTextClassifier
+jobs:
+  - job_id: d6e8617f-029f-4b41-b6d5-cbbdc751f4ae
+    language: python
+    name: text_classifier
+    entrypoint: "text_classifier.py"
+    resources:
+      requests:
+        cpu: 6
+        memory: 8Gi
+      limits:
+        cpu: 6
+        memory: 8Gi
+use_cache: false
