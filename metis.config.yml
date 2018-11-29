@@ -5,10 +5,3 @@ jobs:
     language: python
     name: text_classifier
     entrypoint: "text_classifier.py"
-    resources:
-      requests:
-        cpu: 3
-        memory: 8Gi
-      limits:
-        cpu: 4
-        memory: 8Gi
