@@ -7,9 +7,8 @@ jobs:
     entrypoint: "text_classifier.py"
     resources:
       requests:
-        cpu: 6
+        cpu: 3
         memory: 8Gi
       limits:
-        cpu: 6
+        cpu: 4
         memory: 8Gi
-use_cache: false
