@@ -1,4 +1,4 @@
-# Turi Image Classifier
+# Turi Text Classifier
 
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com._
 
