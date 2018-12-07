@@ -1,17 +1,26 @@
 import turicreate as tc
+import save_models as sm
+from skafossdk import *
 
-# Load data
-data = tc.SFrame('yelp-data.csv')
+ska = Skafos() # initialize skafos
 
-# Create a model
+# Load data from Turi Create's website
+ska.log("Loading the data", labels = ['text_classifier'])
+data = tc.SFrame('https://static.turi.com/datasets/regression/yelp-data.csv')
+
+# Train a text classification model, this takes approximately 15 minutes using CPU.
+ska.log("Building the model", labels = ['text_classifier'])
 model = tc.text_classifier.create(data, 'stars', features=['text'])
 
-# Make predictions & evaluation the model
-predictions = model.predict(data)
-results = model.evaluate(data)
+# export to coreml
+ska.log("Saving the model", labels = ['text_classifier'])
+coreml_model_name = "text_classifier.mlmodel"
+res = model.export_coreml(coreml_model_name)
 
-# Save the model for later use in Turi Create
-model.save('MyTextClassifier.model')
+# compress the model
+compressed_model_name, compressed_model = sm.compress_model(coreml_model_name)
 
-# Export for use in Core ML
-model.export_coreml('MySentenceClassifier.mlmodel')
+# save to Skafos
+sm.skafos_save_model(skafos = ska, model_name = compressed_model_name,
+								compressed_model = compressed_model,
+								permissions = 'public')
