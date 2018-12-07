@@ -2,20 +2,18 @@ import turicreate as tc
 import save_models as sm
 from skafossdk import *
 
-ska = Skafos()
+ska = Skafos() # initialize skafos
 
 # Load data
+ska.log("Loading the data", labels = ['text_classifier'])
 data = tc.SFrame('https://static.turi.com/datasets/regression/yelp-data.csv')
 
-
 # Create a model
+ska.log("Building the model", labels = ['text_classifier'])
 model = tc.text_classifier.create(data, 'stars', features=['text'])
 
-# Make predictions & evaluation the model
-#predictions = model.predict(data)
-#results = model.evaluate(data)
-
 # export to coreml
+ska.log("Saving the model", labels = ['text_classifier'])
 coreml_model_name = "text_classifier.mlmodel"
 res = model.export_coreml(coreml_model_name)
 
