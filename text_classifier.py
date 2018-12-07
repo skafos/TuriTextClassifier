@@ -4,11 +4,11 @@ from skafossdk import *
 
 ska = Skafos() # initialize skafos
 
-# Load data
+# Load data from Turi Create's website
 ska.log("Loading the data", labels = ['text_classifier'])
 data = tc.SFrame('https://static.turi.com/datasets/regression/yelp-data.csv')
 
-# Create a model
+# Train a text classification model, this takes approximately 15 minutes using CPU.
 ska.log("Building the model", labels = ['text_classifier'])
 model = tc.text_classifier.create(data, 'stars', features=['text'])
 
