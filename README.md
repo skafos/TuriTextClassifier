@@ -14,6 +14,7 @@ Additionallly, there exist:
 - `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `save_models.py` - a helper module to save the core ml model to Skafos
+- `text_in_turicreate.ipynb` - a notebook detailing how to get text data into the Turi Create framework.
 
 ## Further notes:
 - The data for this example is Yelp review data that comes from Turi Create's own static data sets and can be found [here](https://static.turi.com/datasets/regression/yelp-data.csv)
