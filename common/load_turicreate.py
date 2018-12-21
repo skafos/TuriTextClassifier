@@ -1,5 +1,6 @@
 from subprocess import check_output
 import sys
+import os
 
 
 def try_install(timeout):
@@ -12,7 +13,9 @@ def try_install(timeout):
         
     try:
         # load turicreate directly from site-packages (avoid restart kernel)
-        sys.path.append("./local/site-packages/")
+        if not os.path.exists(".local/site-packages/"):
+            os.makedirs(".local/site-packages/")
+        sys.path.append(".local/site-packages/")
         import turicreate as tc
         tc.SFrame() # check to see that we can load an empty SFrame
         print("Turi Create is now installed. Reference tc from here on out.")
