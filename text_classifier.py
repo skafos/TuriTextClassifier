@@ -1,5 +1,5 @@
 import turicreate as tc
-import save_models as sm
+import common.save_models as sm
 from skafossdk import *
 
 ska = Skafos() # initialize skafos
