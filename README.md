@@ -7,7 +7,7 @@ The following repo contains code for training a text classifier model on Skafos 
 ## What is here?
 
 The main components of this repo are:
-- `text_classifier.ipynb` - a python notebook that trains and saves a sentiment classifier model
+- `sentiment_classifier.ipynb` - a python notebook that trains and saves a sentiment classifier model
 - `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `utilities/` - a helper module with functions to load data and save the core ml model to Skafos
