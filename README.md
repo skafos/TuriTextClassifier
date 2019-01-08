@@ -22,7 +22,7 @@ The main components of this repo are:
 - If you wish to incorporate your own data, check out `userguide/
 text_in_turicreate.ipynb`
 - If you wish to try another type of text classificaiton model, check out `userguide/spam_classification.ipynb`
-- Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/).
+- Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/)
 
 #### Predicting New Text
 In `text_in_turicreate.ipynb`, we've included some code to show you how to make predictions once you've trained a text classification model.  
