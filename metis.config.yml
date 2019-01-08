@@ -3,5 +3,5 @@ name: TuriTextClassifier
 jobs:
   - job_id: d6e8617f-029f-4b41-b6d5-cbbdc751f4ae
     language: python
-    name: text_classifier
-    entrypoint: "text_classifier.py"
+    name: sentiment_classifier
+    entrypoint: "sentiment_classifier.ipynb"
