@@ -7,7 +7,7 @@ The following repo contains code for training a text classifier model on Skafos 
 ## What is here?
 
 The main components of this repo are:
-- `text_classifier.ipynb` - a python notebook that trains and saves a sentiment classifier model.
+- `text_classifier.ipynb` - a python notebook that trains and saves a sentiment classifier model
 - `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `utilities/` - a helper module with functions to load data and save the core ml model to Skafos
@@ -21,9 +21,9 @@ The main components of this repo are:
 ## Going beyond the example:
 - If you wish to incorporate your own data, check out `userguide/
 text_in_turicreate.ipynb`
-- If you wish to try another type of text classificaiton model
+- If you wish to try another type of text classificaiton model, check out `userguide/spam_classification.ipynb`
 
-It will detail the format you should have your data in. It also includes several helper functions that might help you get your data into the Turi Create framework.
+
 - Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/).
 
 #### Predicting New Text

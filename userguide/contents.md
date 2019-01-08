@@ -7,15 +7,12 @@ Training data is fundamental to building a machine learning model. Sometimes tha
 **Key Point:** When you train a model, the nature of the training data directly influences the model's ability to make predictions. For example, if you train a text classification model on user review sentiment, don't expect it to predict the topic of the text.. that would be a whole separate set of training data.
 
 ## Common Text Classification Tasks
-
 - **Sentiment Classification**: How positive or negative is a piece of text? Typically trained with text data representing user reviews and respective ratings on a scale 1-5. The primary example model in this repo contains a basic sentiment classifier trained on yelp reviews.
 - **Spam Classification**: How likely is it that a piece of text is "spam" or 100% valid? Typically trained with text data paired with the appropriate label (spam or ham). 
 - **Topic Identification**: What is the topic or subject matter of a piece of text? Typically trained with text data paired with related categories.
  
-
 ## Text Wrangling w/ TuriCreate
-Text comes in a host of different formats. Fortunately, the turicreate text classification model handles all preprocessing, [tokenization](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html), and cleaning of your text data automatically. The `text_in_turicreate.ipynb` gives some tips on adapting your text classifier to a new set of data.
-
+Text comes in a host of different formats. Fortunately, the turicreate text classification model handles all preprocessing, [tokenization](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html), and cleaning of your text data automatically. The `text_in_turicreate.ipynb` gives some tips on adapting your text classifier to a **NEW** set of data, detailing proper formatting and several helper functions.
 
 ## New Example: Spam Filtering Model
 Ready to try something other than sentiment classification? Great! Try out spam classification in the `spam_classification.ipynb` notebook. Learn how to wrangle an additional external data source, train a different text classification model, and evaluate the model's performance on a holdout test set!
