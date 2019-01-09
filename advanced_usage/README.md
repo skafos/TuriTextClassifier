@@ -14,7 +14,7 @@ The purpose of this section is to provide some additional insight and examples f
 ## Resources
 
 -  `text_in_turicreate.ipynb`: Gives some tips on adapting your text classifier to a **NEW** set of data, detailing proper formatting and several helper functions.
--  `spam_classifier.ipynb`: Ready to try something other than sentiment classification? Try out spam classification and wrangle a new external data source. By the end, you will have trained a different text classifier and evaluated the model's performance on a holdout test set!
+-  `spam_classifier.ipynb`: Ready to try something other than sentiment classification? Try out spam classification and wrangle a new external data source. By the end, you will have trained a different text classifier and evaluated the model's performance on a holdout test set.
 
 ## Need Help?
 Didn't find something you need? Confused by something? Need more guidance?
