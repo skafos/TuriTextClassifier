@@ -16,11 +16,11 @@ The components of this repo are:
 -  Once trained, you can give the model a snippet of text, and it will predict a sentiment score between 1-5.
     -  A score of 1 means that the text is *negative* in nature.
     -  A score of 5 means that the text is *positive* in nature.  
--  The model takes about 15 minutes to train in the JupyterLab session on CPUs. To decrease this run time, you can deploy as a job and ask Skafos for more resources. To read more about this, check out [Skafos Jobs documentation](https://docs.metismachine.io/docs/jobs-1)
+-  The model takes about 15 minutes to train in the JupyterLab session on CPUs. To decrease this run time, you can deploy as a job and ask Skafos for more resources. To read more about this, check out [Skafos Jobs documentation](https://docs.metismachine.io/docs/jobs-1).
 
 ## Going beyond the example
 - If you wish to incorporate your own data or try another type of text classification model, check out the `advanced_usage/` section.
-- Turi Create has built-in model evaluation and prediction techniques. We use some of the functions  int he `advanced_usage/` section, but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/api/turicreate.toolkits.evaluation.html)
+- Turi Create has built-in model evaluation and prediction techniques. We use some of the functions  int he `advanced_usage/` section, but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/api/turicreate.toolkits.evaluation.html).
 
 
 ## Need Help?
