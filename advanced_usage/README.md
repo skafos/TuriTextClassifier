@@ -1,5 +1,5 @@
-# Text Classification User Guide
-The purpose of this user guide is to provide some additional insight and examples for how to build and deploy text classification models.
+# Text Classifier Advanced Usage
+The purpose of this section is to provide some additional insight and examples for how to build and deploy text classification models.
 
 ## Tips And "Gotchas"
 
@@ -9,12 +9,12 @@ The purpose of this user guide is to provide some additional insight and example
      -  ***Sentiment Classification***: How positive or negative is a piece of text? Typically trained with text data representing user reviews and respective ratings on a scale 1-5. The starter model in this repo contains a basic sentiment classifier trained on yelp reviews.
     -  ***Spam Classification***: How likely is it that a piece of text is "spam" or 100% valid? Typically trained with text data paired with the appropriate label (spam or ham). 
     -  ***Topic Identification***: What is the topic or subject matter of a piece of text? Typically trained with text data paired with related categories.
-- **Wrangling Text w/ Turicreate**: Text comes in a host of different formats. Fortunately, the turicreate text classification model handles all cleaning, [tokenization](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html), and text feature engineering, and cleaning of your text data automatically.
+- **Wrangling Text w/ Turicreate**: Text comes in a host of different formats. Fortunately, the turicreate text classifier handles all cleaning, [tokenization](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html), and text feature engineering, and cleaning of your text data automatically.
 
 ## Resources
 
 -  `text_in_turicreate.ipynb`: Gives some tips on adapting your text classifier to a **NEW** set of data, detailing proper formatting and several helper functions.
--  `spam_classifier.ipynb`: Ready to try something other than sentiment classification? Try out spam classification and wrangle a new external data source. By the end, you will have trained a different text classification model and evaluated the model's performance on a holdout test set!
+-  `spam_classifier.ipynb`: Ready to try something other than sentiment classification? Try out spam classification and wrangle a new external data source. By the end, you will have trained a different text classifier and evaluated the model's performance on a holdout test set!
 
 ## Need Help?
 Didn't find something you need? Confused by something? Need more guidance?
