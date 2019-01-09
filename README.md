@@ -12,11 +12,11 @@ The main components of this repo are:
 -  `requirements.txt` - a file describing all required python dependencies
 
 ## About the model
--  The sentiment classifier is trained on Yelp review data can be found [here](https://static.turi.com/datasets/regression/yelp-data.csv).
+-  The sentiment classifier is trained on [Yelp review data](https://static.turi.com/datasets/regression/yelp-data.csv).
 -  Once trained, you can feed the model a snippet of text, and it will predict a sentiment score between 1-5.
     -  A score of 1 means that the text is *negative* in nature.
     -  A score of 5 means that the text is *positive* in nature.  
--  The model takes about 15 minutes to train in the JupyterLab session on CPUs. To decrease this run time, you can deploy as a job and ask Skafos for more resources. To read more about this, check out [Metis Machine's documentation](https://docs.metismachine.io/docs/jobs-1)
+-  The model takes about 15 minutes to train in the JupyterLab session on CPUs. To decrease this run time, you can deploy as a job and ask Skafos for more resources. To read more about this, check out [Skafos Jobs documentation](https://docs.metismachine.io/docs/jobs-1)
 
 ### Predicting new text
 In `advanced_usage/text_in_turicreate.ipynb`, we've included some code to show you how to make predictions once you've trained a sentiment classification model by simply calling the `.predict()` method.
