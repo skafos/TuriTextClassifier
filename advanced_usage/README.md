@@ -9,7 +9,7 @@ The purpose of this section is to provide some additional insight and examples f
      -  ***Sentiment Classification***: How positive or negative is a piece of text? Typically trained with text data representing user reviews and respective ratings on a scale 1-5. The starter model in this repo contains a basic sentiment classifier trained on yelp reviews.
     -  ***Spam Classification***: How likely is it that a piece of text is "spam" or 100% valid? Typically trained with text data paired with the appropriate label (spam or ham). 
     -  ***Topic Identification***: What is the topic or subject matter of a piece of text? Typically trained with text data paired with related categories.
-- **Wrangling Text w/ Turicreate**: Text comes in a host of different formats. Fortunately, the turicreate text classifier handles all cleaning, [tokenization](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html), and text feature engineering, and cleaning of your text data automatically.
+- **Wrangling Text w/ Turi Create**: Text comes in a host of different formats. Fortunately, the Turi Create text classifier handles all cleaning, [tokenization](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html), and text feature engineering, and cleaning of your text data automatically.
 
 ## Resources
 
@@ -24,4 +24,4 @@ Please contact us with questions or feedback! Here are two ways:
 -  [**Signup for our Slack Channel**](https://metismachine-skafos.slack.com/join/shared_invite/enQtNTAxMzEwOTk2NzA5LThjMmMyY2JkNTkwNDQ1YjgyYjFiY2MyMjRkMzYyM2E4MjUxNTJmYmQyODVhZWM2MjQwMjE5ZGM1Y2YwN2M5ODI)
 -  [**Find us on Reddit**](https://reddit.com/r/skafos)
 
-Also checkout turicreate's [**documentation**](https://apple.github.io/turicreate/docs/userguide/text_classifier/) on text classification basics.
+Also checkout Turi Create's [**documentation**](https://apple.github.io/turicreate/docs/userguide/text_classifier/) on text classification basics.
