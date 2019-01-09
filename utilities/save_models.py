@@ -17,8 +17,8 @@ compressed_model_name, compressed_model = compress_model(coreml_model_name)
 skafos_save_model(
     skafos=ska,
     model_name=compressed_model_name,
-		compressed_model=compressed_model,
-		permissions='public'
+    compressed_model=compressed_model,
+    permissions='public'
 )
 '''
 
@@ -30,9 +30,9 @@ def _load_mlmodel(name):
 
 def compress_model(coreml_model_name):
     """Compress a coreml model to make it smaller.
-	  :param coreml_model_name: str, name of the model to be compressed
-	  :return: a compressed model to save to skafos.
-	  """
+    :param coreml_model_name: str, name of the model to be compressed
+    :return: a compressed model to save to skafos.
+    """
     # wait for full-model to be written to file
     sleep(10)
 
