@@ -1,5 +1,5 @@
 # Text Classifier Advanced Usage
-The purpose of this section is to provide some additional insight and examples for how to build and deploy text classification models.
+The purpose of this Advanced Usage Guide is to provide additional tooling, tips, and guidance for building Text Classification Models.
 
 ## Tips And "Gotchas"
 
