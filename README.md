@@ -6,13 +6,13 @@ The following repo contains code for training a text classifier model on Skafos 
 
 ## What is here?
 The components of this repo are:
--  `sentiment_classifier.ipynb` - a Python notebook that trains and saves a sentiment classifier model to use in your app. Start Here.
--  `utilities/` - a directory that contains helper functions used by `sentiment_classifier.ipynb`.
+-  `text_classifier.ipynb` - a Python notebook that trains and saves a sentiment classifier model to use in your app. Start Here.
+-  `utilities/` - a directory that contains helper functions used by `text_classifier.ipynb`.
 -  `advanced_usage/` - a directory that contains additional information about this text classification model, how to incorporate your own data, advanced usage, and additional example models.
 -  `requirements.txt` - a file describing all required Python dependencies.
 
 ## About the model
--  The sentiment classifier is trained on [Yelp review data](https://static.turi.com/datasets/regression/yelp-data.csv).
+-  The text classifier is trained on [Yelp review data](https://static.turi.com/datasets/regression/yelp-data.csv).
 -  Once trained, you can give the model a snippet of text, and it will predict a sentiment score between 1-5.
     -  A score of 1 means that the text is *negative* in nature.
     -  A score of 5 means that the text is *positive* in nature.  
