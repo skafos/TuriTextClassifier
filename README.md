@@ -2,35 +2,32 @@
 
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
 
-The following repo contains code for training an text classifier model on Skafos using the Turi Create framework. As much as possible, the code in this repo mimicks Turi Create's text classifier example which can be found [here](https://apple.github.io/turicreate/docs/userguide/text_classifier/). 
+The following repo contains code for training a text classifier model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/text_classifier/). The example model is based on user reviews from Yelp, and given a new sentence, will predict the user's sentiment (negative or positve on a scale from 1-5).
 
 ## What is here?
+The components of this repo are:
+-  `text_classifier.ipynb` - a Python notebook that trains and saves a sentiment classifier model to use in your app. Start here.
+-  `utilities/` - a directory that contains helper functions used by `text_classifier.ipynb`.
+-  `advanced_usage/` - a directory that contains additional information about this text classification model, how to incorporate your own data, advanced usage, and additional example models.
+-  `requirements.txt` - a file describing all required Python dependencies.
 
-The two main components to this repo are:
-- `text_classifier.py` - a Skafos job that trains a text classifier model and saves a core ml model
-- `text_classifier.ipynb` - a python notebook with the same code as the above `text_classifier.py` job.
+## About the model
+-  The text classifier is trained on [Yelp review data](https://static.turi.com/datasets/regression/yelp-data.csv).
+-  Once trained, you can give the model a snippet of text, and it will predict a sentiment score between 1-5.
+    -  A score of 1 means that the text is *negative* in nature.
+    -  A score of 5 means that the text is *positive* in nature.  
+-  The model takes about 15 minutes to train in the JupyterLab session on CPUs. To decrease this run time, you can deploy as a job and ask Skafos for more resources. To read more about this, check out [Skafos Jobs documentation](https://docs.metismachine.io/docs/jobs-1).
 
-Additionallly, there exist:
-- `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
-- `requirements.txt` - a file telling Skafos the project's dependencies
-- `save_models.py` - a helper module to save the core ml model to Skafos
-- `text_in_turicreate.ipynb` - a notebook detailing how to get text data into the Turi Create framework.
+## Going beyond the example
+- If you wish to incorporate your own data or try another type of text classification model, check out the `advanced_usage/` section.
+- Turi Create has built-in model evaluation and prediction techniques. We use some of the functions  int he `advanced_usage/` section, but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/api/turicreate.toolkits.evaluation.html).
 
-## Further notes:
-- The data for this example is Yelp review data that comes from Turi Create's own static data sets and can be found [here](https://static.turi.com/datasets/regression/yelp-data.csv)
-- Note this job takes about 15 minutes to run locally using CPU. To decrease this run time, you can ask Skafos for more resources if you deploy this job to Skafos. To read more about this, check out [Metis Machine's documentation](https://docs.metismachine.io/docs/jobs-1)
 
-## Going beyond the example:
-- If you wish to incorporate your own data, check out `text_in_turicreate.ipynb`. It will detail the format you should have your data in. It also includes several helper functions that might help you get your data into the Turi Create framework.
-- Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/).
+## Need Help?
+Please contact us with questions or feedback! Here are two ways:
 
-#### Predicting New Text
-In `text_in_turicreate.ipynb`, we've included some code to show you how to make predictions once you've trained a text classification model.  
 
-```python
-# predict a bad review, returns 2
-model.predict(tc.SFrame({'review' : ['This product didnt meet expectations']}))
+-  [**Signup for our Slack Channel**](https://skafosai.slack.com)
+-  [**Find us on Reddit**](https://reddit.com/r/skafos) 
 
-# predict a good review, returns 5
-model.predict(tc.SFrame({'review' : ['This product far exceeded my expectations']}))
-```
+Also checkout Turi Create's [**documentation**](https://apple.github.io/turicreate/docs/userguide/text_classifier/) on text classification basics.

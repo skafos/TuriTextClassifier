@@ -10,3 +10,4 @@ lost+found
 .yarnrc
 .conda
 __pycache__
+.idea*
