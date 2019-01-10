@@ -6,7 +6,7 @@ The following repo contains code for training a text classifier model on Skafos 
 
 ## What is here?
 The components of this repo are:
--  `text_classifier.ipynb` - a Python notebook that trains and saves a sentiment classifier model to use in your app. Start Here.
+-  `text_classifier.ipynb` - a Python notebook that trains and saves a sentiment classifier model to use in your app. Start here.
 -  `utilities/` - a directory that contains helper functions used by `text_classifier.ipynb`.
 -  `advanced_usage/` - a directory that contains additional information about this text classification model, how to incorporate your own data, advanced usage, and additional example models.
 -  `requirements.txt` - a file describing all required Python dependencies.
