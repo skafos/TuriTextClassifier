@@ -2,7 +2,7 @@
 
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
 
-The following repo contains code for training a text classifier model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/text_classifier/). The example model is based on user reviews from Yelp, and given a sentence, will predict the user's sentiment (negative or positve on a scale from 1-5).
+The following repo contains code for training a text classifier model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/text_classifier/). The example model is based on user reviews from Yelp, and given a new sentence, will predict the user's sentiment (negative or positve on a scale from 1-5).
 
 ## What is here?
 The components of this repo are:
