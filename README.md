@@ -20,7 +20,7 @@ The components of this repo are:
 
 ## Going beyond the example
 - If you wish to incorporate your own data or try another type of text classification model, check out the `advanced_usage/` section.
-- Turi Create has built-in model evaluation and prediction techniques. We use some of the functions  int he `advanced_usage/` section, but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/api/turicreate.toolkits.evaluation.html).
+- Turi Create has built-in model evaluation and prediction techniques. We use some of the functions  in the `advanced_usage/` section, but for a more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/api/turicreate.toolkits.evaluation.html).
 
 
 ## Need Help?
