@@ -1,5 +1,5 @@
-skafossdk==1.1.9
-turicreate==5.2.1
+skafossdk==1.2.0.dev0
+turicreate==5.3.1
 requests==2.19.1
 pandas==0.23.4
 numpy==1.15.4
