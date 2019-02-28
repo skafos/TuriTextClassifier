@@ -1,4 +1,4 @@
-skafossdk==1.2.0.dev2
+skafossdk==1.2.1
 turicreate==5.3.1
 requests==2.19.1
 pandas==0.23.4
